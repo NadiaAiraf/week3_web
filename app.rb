@@ -18,7 +18,13 @@ get '/cohort/september' do
   "Is the be-e-eeeee-SSSSSSSSS.T"
 end
 
-get '/cat' do
+get '/random-cat' do
   @samp = ["Amigo", "Oscar", "Viking"].sample
+  erb(:index)
+end
+
+get '/named-cat' do
+  p params
+  @samp = params[:name]
   erb(:index)
 end

@@ -1,6 +1,10 @@
 
 
+
 <h1> My name is <%= @samp %></h1>
+<% if !@samp %>
+<form>name: <input type="text" name="name"><input type="submit" value="Submit"></form>
+<% end %>
 <div>
 <img src='http://bit.ly/1eze8aE' alt='a picture of a cat' style='border: 5px dashed red'>
 </div>

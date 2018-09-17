@@ -19,8 +19,6 @@ get '/cohort/september' do
 end
 
 get '/cat' do
-
-  "<div>
-  <img src='http://bit.ly/1eze8aE' alt='a picture of a cat' style='border: 5px dashed red'>
-  </div>"
+  @samp = ["Amigo", "Oscar", "Viking"].sample
+  erb(:index)
 end
